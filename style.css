@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --text-color-purple: #34355b;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+body {
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+main {
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow: 0px 2rem 5rem 0px rgba(0, 0, 0, 0.8);
+  padding: 4.8rem 6.4rem 6.4rem;
+  width: min(42.8rem, 90%);
+  text-align: center;
+}
+
+.screen1 h1 {
+  color: var(--text-color-purple);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.screen1 p {
+  color: var(--text-color-purple);
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  margin: 1.4rem auto 2.6rem;
+}
+
+.screen1 .biscoito-screen1 {
+  cursor: pointer;
+}
+
+.screen1 .biscoito-screen1:hover {
+  animation: tremor 0.5s ease-in-out infinite;
+}
+
+@keyframes tremor {
+  0% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(-2px, 2px);
+  }
+  30% {
+    transform: translate(2px, -2px);
+  }
+  45% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  75% {
+    transform: translate(-2px, 2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.screen2 h1 {
+  color: var(--text-color-purple);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.screen2 .sorte {
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+  padding: 1rem;
+  margin: 1.6rem auto 1.2rem;
+  animation: subirEaumentar 2s ease-in-out;
+}
+
+@keyframes subirEaumentar {
+  0% {
+    transform: translateY(175px) scale(0);
+  }
+  100% {
+    transform: translateY(0) scale(1); /* Subindo 100px e aumentando em 50% */
+  }
+}
+
+.screen2 p {
+  color: #000;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.screen2 .biscoito-screen2 {
+  margin: 4rem auto 6rem;
+}
+
+.screen2 button {
+  border-radius: 0.4rem;
+  background: #ff9500;
+  border: none;
+  padding: 1.6rem;
+
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.screen2 button:hover {
+  background: #b96d01;
+}
